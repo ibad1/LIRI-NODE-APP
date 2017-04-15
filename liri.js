@@ -87,16 +87,16 @@ function movie(){
 
 	OMDB("http://www.omdbapi.com/?t=" + arg2 + "&y=&plot=short&r=json", function(error, response, body){
 		if (!error && response.statusCode === 200){
-			console.log("The title of the movie is: " + JSON.parse(body).Title);
-			console.log("The movie's rating is: " + JSON.parse(body).imdbRating);
-			console.log("The movie was released on: " + JSON.parse(body).Released);
-			console.log("The movie was produced in: " + JSON.parse(body).Country);
-			console.log("The language of the movie is: " + JSON.parse(body).Language);
-			console.log("The plot of the movie is: " + JSON.parse(body).Plot);
-			console.log("The actors in this movie are: " + JSON.parse(body).Actors);
-			console.log("The language of the movie is: " + JSON.parse(body).Language);
-			console.log("The Rotten Tomatoes Rating for this movie is :" + JSON.parse(body).Ratings[1].Value);
-			console.log("The website for this movie is: " + JSON.parse(body).Website);
+			console.log("Title: " + JSON.parse(body).Title);
+			console.log("Rating: " + JSON.parse(body).imdbRating);
+			console.log("Released: " + JSON.parse(body).Released);
+			console.log("Produced: " + JSON.parse(body).Country);
+			console.log("Language: " + JSON.parse(body).Language);
+			console.log("Plot: " + JSON.parse(body).Plot);
+			console.log("Actors: " + JSON.parse(body).Actors);
+			console.log("Language: " + JSON.parse(body).Language);
+			console.log("Rotten Tomatoes Rating:" + JSON.parse(body).Ratings[1].Value);
+			console.log("Website: " + JSON.parse(body).Website);
 		}
 	})
 	if (!arg2){
