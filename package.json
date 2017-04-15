@@ -1,0 +1,25 @@
+{
+  "name": "liri-app",
+  "version": "1.0.0",
+  "description": "using the command line to get and display data from API's ",
+  "main": "liri.js",
+  "dependencies": {
+    "request": "^2.81.0",
+    "spotify": "^0.3.0",
+    "twitter": "^1.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibad1/LIRI-NODE-APP.git"
+  },
+  "author": "Ibad Aslam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ibad1/LIRI-NODE-APP/issues"
+  },
+  "homepage": "https://github.com/ibad1/LIRI-NODE-APP#readme"
+}
